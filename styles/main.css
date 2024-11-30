@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2ecc71;
+    padding: 0.25rem 1rem;
+    color: white;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navBar{
+    transition: background-color 0.25s;
+    border-radius: 8px;
+    padding: 5px 8px;
+}
+
+.navBar:hover{
+    background-color: #247b17;
+    border-radius: 8px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: url('') no-repeat center center/cover;
+    color: limegreen;
+    margin-bottom: 0px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 0.5rem 1rem;
+    color: white;
+    background-color: #2ecc71;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #27ae60;
+}
+
+#productHeadline {
+    text-align: center;
+}
+
+/* Product Carousel Section */
+.product-carousel {
+    margin: 2rem auto;
+    text-align: center;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+.carousel-container {
+    max-width: 500px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.carousel-dots .dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.carousel-dots .dot.active {
+    background-color: #2ecc71;
+}
