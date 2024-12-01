@@ -3,66 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pricing - CW Web Technology</title>
-    <link rel="stylesheet" href="../styles/fonts.css">
+    <title>Pricing - EcoSphere Solutions</title>
     <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/pricing.css">
     <link rel="stylesheet" href="../styles/adaptation.css">
+    <script src="../scripts/pricing.js" defer></script>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="../images/logo.png" alt="CW Web Technology Logo">
+            <img src="../images/logo.png" alt="EcoSphere Solutions Logo">
         </div>
         <nav>
             <ul>
                 <li class="navBar"><a href="index.html">Home</a></li>
                 <li class="navBar"><a href="product.html">Products</a></li>
-                <li class="navBar"><a href="pricing.html">Pricing</a></li>
-                <li class="navBar"><a href="customers.html">Customers</a></li>
-                <li class="navBar"><a href="resources.html">Resources</a></li>
+                <li class="navBar"><a href="pricing.html" class="active">Pricing</a></li>
+                <li class="navBar"><a href="customers.html">Feedback</a></li>
+                <li class="navBar"><a href="resources.html">Contact us</a></li>
+                <li class="navBar"><a href="resources.html">Locations</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <section class="hero">
-            <h1>Pricing Plans</h1>
-            <p>Choose a plan that fits your needs and budget.</p>
-        </section>
-        <div class="pricing-grid">
-            <div class="pricing-item">
-                <h2>Basic Plan</h2>
-                <p><strong>$19.99/month</strong></p>
-                <ul>
-                    <li>Access to standard features</li>
-                    <li>Email support</li>
-                    <li>Basic analytics</li>
-                </ul>
-                <a href="#" class="btn">Choose Plan</a>
-            </div>
-            <div class="pricing-item">
-                <h2>Pro Plan</h2>
-                <p><strong>$49.99/month</strong></p>
-                <ul>
-                    <li>Access to all features</li>
-                    <li>Priority support</li>
-                    <li>Advanced analytics</li>
-                </ul>
-                <a href="#" class="btn">Choose Plan</a>
-            </div>
-            <div class="pricing-item">
-                <h2>Enterprise Plan</h2>
-                <p><strong>Contact Us</strong></p>
-                <ul>
-                    <li>Custom solutions</li>
-                    <li>Dedicated support</li>
-                    <li>Full suite of tools</li>
-                </ul>
-                <a href="#" class="btn">Contact Us</a>
+        <!-- Basket Section -->
+        <div class="basket">
+            <div class="basket-box">
+                <img src="../images/shopping-bag.png" alt="Basket" class="basket-icon">
+                <div class="basket-details">
+                    <span id="total-items">0</span> items
+                </div>
+                <div class="basket-buttons">
+                    <button id="reset">Reset</button>
+                    <button id="pay-now">Pay Now</button>
+                </div>
             </div>
         </div>
+
+        <!-- Product Listing Section -->
+        <section class="pricing-section">
+            <h1>Shopping section</h1>
+            <div class="pricing-container">
+                <!-- Example Product Card -->
+                <div class="product-card" data-id="1">
+                    <img src="../images/reusable-bottle.jpg" alt="Reusable Bottle" class="product-image">
+                    <h3>Reusable Bottle</h3>
+                    <p>Durable and eco-friendly water bottles for daily use.</p>
+                    <div class="product-price">$19.99</div>
+                    <div class="product-counter">
+                        <button class="decrement">-</button>
+                        <span class="product-quantity">0</span>
+                        <button class="increment">+</button>
+                    </div>
+                </div>
+                <div class="product-card" data-id="2">
+                    <img src="../images/bamboo-toothbrush.jpg" alt="Bamboo Toothbrush" class="product-image">
+                    <h3>Bamboo Toothbrush</h3>
+                    <p>Natural bamboo toothbrushes for sustainable oral care.</p>
+                    <div class="product-price">$5.99</div>
+                    <div class="product-counter">
+                        <button class="decrement">-</button>
+                        <span class="product-quantity">0</span>
+                        <button class="increment">+</button>
+                    </div>
+                </div>
+                <div class="product-card" data-id="3">
+                    <img src="../images/eco-packaging.jpg" alt="Eco-Friendly Packaging" class="product-image">
+                    <h3>Eco-Friendly Packaging</h3>
+                    <p>Biodegradable packaging solutions for businesses and individuals</p>
+                    <div class="product-price">$2.99</div>
+                    <div class="product-counter">
+                        <button class="decrement">-</button>
+                        <span class="product-quantity">0</span>
+                        <button class="increment">+</button>
+                    </div>
+                </div>
+                <div class="product-card" data-id="4">
+                    <img src="../images/Reusable-Shopping-Bags.jpg" alt="Reusable Shopping Bags" class="product-image">
+                    <h3>Reusable Shopping Bags</h3>
+                    <p>Durable and stylish bags made from eco-friendly materials, perfect for reducing single-use plastic waste during your shopping trips</p>
+                    <div class="product-price">$4.99</div>
+                    <div class="product-counter">
+                        <button class="decrement">-</button>
+                        <span class="product-quantity">0</span>
+                        <button class="increment">+</button>
+                    </div>
+                </div>
+                <div class="product-card" data-id="5">
+                    <img src="../images/Compostable-Food-Containers.jpg" alt="Compostable Food Containers" class="product-image">
+                    <h3>Compostable Food Containers</h3>
+                    <p>Sustainable and biodegradable containers designed to keep your food fresh while protecting the environment.</p>
+                    <div class="product-price">$5.99</div>
+                    <div class="product-counter">
+                        <button class="decrement">-</button>
+                        <span class="product-quantity">0</span>
+                        <button class="increment">+</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer>
-        <p>© 2024 CW Web Technology. All rights reserved.</p>
+        <p>© 2024 EcoSphere Solutions. All rights reserved.</p>
     </footer>
 </body>
 </html>
