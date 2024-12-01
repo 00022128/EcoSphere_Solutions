@@ -6,6 +6,7 @@
     max-width: 1200px;
     margin: auto;
     text-align: center;
+
 }
 
 .product-item img {
@@ -13,6 +14,7 @@
     height: 200px;
     object-fit: cover;
     border-radius: 5px;
+    padding-top: 15px;
 }
 
 @media (max-width: 768px) {
@@ -26,3 +28,22 @@
     }
 }
 
+#productHeadline{
+    text-align: center;
+}
+
+.product-item {
+    background-color: #70aa709c;
+    
+    border-radius: 10px;
+
+    transition: box-shadow 0.25s;
+}
+
+.product-item:hover {
+    box-shadow: 0 8px 16px #335a43;
+}
+
+.product {
+    background: linear-gradient(180deg, #95a492, #a7deab);
+}
