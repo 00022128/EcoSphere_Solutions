@@ -165,7 +165,7 @@ footer {
 
 /* About Us Section */
 .about-us {
-    background: linear-gradient(180deg, #f9f9f9, #e8f5e9); /* Gradient background */
+    background: linear-gradient(180deg, #95a492, #a7deab); /* Gradient background */
     padding: 3rem 2rem;
 }
 
@@ -228,4 +228,5 @@ footer {
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
 
