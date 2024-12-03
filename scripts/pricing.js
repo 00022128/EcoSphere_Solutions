@@ -41,5 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     payButton.addEventListener("click", () => {
         alert(`You have selected ${totalItems} items. Proceeding to payment!`);
+        totalItems = 0;
     });
 });

@@ -3,41 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customers - CW Web Technology</title>
-    <link rel="stylesheet" href="../styles/fonts.css">
+    <title>Feedback - EcoSphere Solutions</title>
     <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/adaptation.css">
+    <link rel="stylesheet" href="../styles/feedback.css">
+    <script src="../scripts/feedback.js" defer></script>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="../images/logo.png" alt="CW Web Technology Logo">
+            <img src="../images/logo.png" alt="EcoSphere Solutions Logo">
         </div>
         <nav>
             <ul>
                 <li class="navBar"><a href="index.html">Home</a></li>
                 <li class="navBar"><a href="product.html">Products</a></li>
                 <li class="navBar"><a href="pricing.html">Pricing</a></li>
-                <li class="navBar"><a href="customers.html">Feedback</a></li>
-                <li class="navBar"><a href="resources.html">Contact us</a></li>
-                <li class="navBar"><a href="resources.html">Locations</a></li>
+                <li class="navBar"><a href="feedback.html" class="active">Feedback</a></li>
+                <li class="navBar"><a href="contact_us.html">Contact us</a></li>
+                <li class="navBar"><a href="locations.html">Locations</a></li>
             </ul>
+        </nav>
     </header>
+
     <main>
-        <h1>Our Customers</h1>
-        <div class="customer-reviews">
-            <div class="review-item">
-                <p>"CW Web Technology transformed our website and increased our sales by 50%!"</p>
-                <h3>- Jane Doe, CEO of GreenTech</h3>
+        <section class="reviews-section">
+            <h1>What Our Customers Say</h1>
+            <div class="reviews-container">
+                <div class="review-box">
+                    <p>"Absolutely love the products! EcoSphere has made sustainability so much easier for my family. The bamboo toothbrushes are a game-changer."</p>
+                    <span>★★★★★</span>
+                </div>
+                <div class="review-box">
+                    <p>"The eco-friendly packaging solutions are fantastic. They're durable and biodegradable, perfect for my small business."</p>
+                    <span>★★★★★</span>
+                </div>
+                <div class="review-box">
+                    <p>"Great products overall, but I found the reusable bottles slightly overpriced. Still, the quality is undeniable."</p>
+                    <span>★★★☆☆</span>
+                </div>
             </div>
-            <div class="review-item">
-                <p>"Their customer service is outstanding, and their solutions are truly innovative."</p>
-                <h3>- John Smith, Developer</h3>
-            </div>
-        </div>
+        </section>
+
+        <section class="feedback-form-section">
+            <h2>Submit Your Feedback</h2>
+            <form id="feedback-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+
+                <label for="rating">Rating (1-5):</label>
+                <select id="rating" name="rating" required>
+                    <option value="5">5 - Excellent</option>
+                    <option value="4">4 - Good</option>
+                    <option value="3">3 - Average</option>
+                    <option value="2">2 - Poor</option>
+                    <option value="1">1 - Terrible</option>
+                </select>
+
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" placeholder="Your feedback here..." rows="4" required></textarea>
+
+                <button id="submit" type="submit">Submit</button>
+            </form>
+        </section>
     </main>
+
     <footer>
-        <p>© 2024 CW Web Technology. All rights reserved.</p>
+        <p>© 2024 EcoSphere Solutions. All rights reserved.</p>
     </footer>
 </body>
 </html>
