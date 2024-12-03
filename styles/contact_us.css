@@ -2,7 +2,13 @@
 .contact-section {
     text-align: center;
     padding: 3rem 2rem;
-    background: #f9f9f9;
+    background: linear-gradient(180deg, #a1ce98, #ffffff);
+
+    
+}
+
+form:hover {
+    box-shadow: 0 8px 16px #27ae60;
 }
 
 .contact-section h1 {
@@ -25,6 +31,8 @@ form {
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    transition: box-shadow 0.25s;
 }
 
 .form-group {
