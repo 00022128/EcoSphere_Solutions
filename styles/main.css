@@ -194,7 +194,7 @@ footer {
 
 /* Alternating Layouts */
 .about-block.left {
-    flex-direction: flex-end;
+    justify-content: flex-end;
 }
 
 .about-text {
@@ -227,5 +227,11 @@ footer {
     width: auto;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#warning {
+    color: gray;
+    font-size: 0.6em;
+    margin-top: 0;
 }
 
