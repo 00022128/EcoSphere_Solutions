@@ -1,34 +1,41 @@
-/* General Reset for Small Screens */
+/* General Reset */
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Media Queries for Responsiveness */
-
-/* Small devices (portrait tablets and large phones, 600px and below) */
-@media (max-width: 600px) {
-  header {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-  }
-
-  header .logo img {
-      max-width: 120px; /* Shrink logo */
-      margin-bottom: 10px;
-  }
-
+/* Navigation Adaptations */
+@media (max-width: 768px) {
   nav ul {
       flex-direction: column;
-      gap: 0.5rem;
-  }
-
-  .hero {
+      gap: 1rem;
+      background-color: #2ecc71;
       padding: 1rem;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      display: none;
+      z-index: 1000;
   }
 
+  nav ul.show {
+      display: flex; /* Show menu on toggle */
+  }
+
+  .menu-toggle {
+      display: block;
+      cursor: pointer;
+      position: absolute;
+      right: 1rem;
+      top: 15px;
+      z-index: 1001;
+  }
+}
+
+/* Hero Section Adaptation */
+@media (max-width: 768px) {
   .hero h1 {
       font-size: 1.8rem;
   }
@@ -43,64 +50,113 @@ body {
   }
 
   .carousel-slide img {
-      object-fit: cover;
+      height: auto;
+      object-fit: contain;
   }
 
-  footer p {
-      font-size: 0.9rem;
+  .hero {
+      padding: 1rem;
+      text-align: center;
   }
 }
 
-/* Medium devices (landscape tablets and medium-sized devices, 768px and below) */
+/* Feedback Page Adaptations */
 @media (max-width: 768px) {
-  .hero h1 {
-      font-size: 2rem;
-  }
-
-  .hero p {
-      font-size: 1.1rem;
-  }
-
-  .hero .btn {
-      padding: 0.7rem 1.2rem;
-      font-size: 1.1rem;
-  }
-
-  nav ul {
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-  }
-
-  .about-block {
+  .reviews-container {
       flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 1.5rem;
+      gap: 1.5rem;
   }
 
-  .about-block img {
-      max-width: 90%;
+  .review-box {
+      width: 100%;
+      text-align: center;
+      padding: 1rem;
+      margin: 0 auto;
+  }
+
+  #feedback-form {
+      padding: 1rem;
+  }
+
+  #feedback-form input,
+  #feedback-form select,
+  #feedback-form textarea {
+      width: 100%;
       margin-bottom: 1rem;
   }
 }
 
-/* Large devices (desktops and larger screens, 1024px and above) */
-@media (max-width: 1024px) {
-  .hero h1 {
-      font-size: 2.5rem;
+/* Pricing Page Adaptations */
+@media (max-width: 768px) {
+  .product-card {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 1rem auto;
   }
 
-  .hero p {
-      font-size: 1.2rem;
+  .product-card img {
+      max-width: 90%;
+      height: auto;
   }
 
-  nav ul {
-      justify-content: space-around;
-      gap: 1.5rem;
+  .basket {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
   }
 
-  .about-block img {
-      max-width: 80%;
+  .basket .basket-buttons {
+      flex-direction: column;
+      gap: 0.5rem;
+  }
+}
+
+/* Locations Page Adaptations */
+@media (max-width: 768px) {
+  .map-container iframe {
+      width: 100%;
+      height: 300px;
+  }
+
+  .map-container p {
+      text-align: center;
+      font-size: 0.9rem;
+  }
+}
+
+/* Contact Us Page Adaptations */
+@media (max-width: 768px) {
+  .contact-section {
+      padding: 1rem;
+  }
+
+  .contact-section form {
+      width: 100%;
+      padding: 1rem;
+  }
+
+  .contact-section .form-group {
+      margin-bottom: 1rem;
+  }
+
+  .contact-section .form-group input,
+  .contact-section .form-group textarea {
+      width: 100%;
+      padding: 0.5rem;
+  }
+
+  .contact-section button {
+      width: 100%;
+      padding: 0.5rem;
+  }
+}
+
+/* Footer Adaptation */
+@media (max-width: 768px) {
+  footer {
+      padding: 1rem;
+      font-size: 0.9rem;
+      text-align: center;
   }
 }
