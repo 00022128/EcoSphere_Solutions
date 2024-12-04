@@ -76,7 +76,6 @@ button:hover {
     background-color: #27ae60;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     form {
         padding: 1.5rem;

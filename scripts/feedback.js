@@ -5,13 +5,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const animateReviews = () => {
         reviews.forEach((review, index) => {
-            review.classList.remove("active"); // Hide all reviews
+            review.classList.remove("active");
             if (index === currentIndex) {
-                review.classList.add("active"); // Show the active review
+                review.classList.add("active");
             }
         });
 
-        // Update index
         currentIndex = (currentIndex + 1) % reviews.length;
     };
 
@@ -22,10 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
     
 
 
-    // Start animation
     setInterval(animateReviews, 3000);
 
-    // Initialize first review
     animateReviews();
 
 

@@ -24,9 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Initialize
     updateCarousel();
 
-    // Auto-cycle every 5 seconds
     setInterval(autoCycle, 5000);
 });

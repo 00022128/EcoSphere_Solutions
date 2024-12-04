@@ -10,7 +10,6 @@
     margin-bottom: 2rem;
 }
 
-/* Adjusting Reviews Container */
 .reviews-container {
     position: relative; 
     height: 150px;
@@ -18,7 +17,7 @@
     margin: 0 auto; 
 }
 
-/* Individual Review Boxes */
+/* Review Box Animation */
 .review-box {
     position: absolute; 
     top: 50%; 
@@ -45,7 +44,7 @@
     transform: translate(-50%, -50%) scale(1); /* Visible and centered */
 }
 
-/* Feedback Form Section */
+/* Feedback Form */
 .feedback-form-section {
     padding: 2rem;
     background: white;
