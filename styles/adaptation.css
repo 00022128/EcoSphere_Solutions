@@ -5,7 +5,7 @@ body {
 }
 
 header {
-    padding: 10px;
+    padding: 7px;
 }
 
 .logo img {
@@ -23,15 +23,15 @@ nav li {
 }
 
 .hero h1 {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .hero p {
-    font-size: 16px;
+    font-size: 13px;
 }
 
 .btn {
-    font-size: 14px;
+    font-size: 11px;
     padding: 8px 16px;
 }
 
@@ -202,7 +202,7 @@ table {
         top: 60px;
         left: 0;
         width: 100%;
-        background-color: #f8f8f8;
+        background: linear-gradient(180deg, #a1ce98, #ffffff);
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
